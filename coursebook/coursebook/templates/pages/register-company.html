@@ -1,0 +1,85 @@
+{% extends "layout/base.html" %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/global.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/login.min.css' %}" />
+{% endblock %} {% block content %}
+<section class="register">
+  <div class="container">
+    <div class="register__inner">
+      <div class="register__box">
+        <div class="login__box-title">Dołącz jako szkoleniowiec</div>
+        <form method="POST" class="register__form jsSendForm" action="">
+          {% csrf_token %}
+          <div class="form__row">
+            <div class="form__group">
+              <input
+                id="username"
+                name="company_name"
+                placeholder="Nazwa firmy"
+                class="form__group-input"
+                type="text"
+              />
+              <p class="form__group-paragraph--error">error</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <input
+                id="userEmail"
+                name="email"
+                placeholder="Adres e-mail"
+                class="form__group-input"
+                type="text"
+              />
+              <p class="form__group-paragraph--error">error</p>
+            </div>
+            <div class="form__group">
+              <input
+                id="JSphoneNumber"
+                name="phone_number"
+                placeholder="Numer telefonu"
+                class="form__group-input"
+                type="phone"
+              />
+              <p class="form__group-paragraph--error">error</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <input
+                id="userPassword"
+                name="password"
+                placeholder="Hasło"
+                class="form__group-input"
+                type="password"
+              />
+              <p class="form__group-paragraph--error">error</p>
+            </div>
+          </div>
+          <button title="Zarejestruj się" id="" class="btn btn--primary jsCompanyAdd">
+            Zarejestruj się
+            <span class="btn__arrow">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+
+      <a href="{% url 'login' %}" class="login__return">Powrót do logowania</a>
+    </div>
+  </div>
+</section>
+{% endblock %} {% block scripts %}
+<script src="{% static 'js/register-user.min.js' %}"></script>
+<script src="{% static 'js/main.min.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,87 @@
+{%if pagination.paginator.num_pages > 1%}
+<div class="pagination">
+    {% if pagination.has_previous %}
+      <a href="?page={{ pagination.previous_page_number }}" class="pagination__item">
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="gg:chevron-left">
+            <path
+              id="Vector"
+              d="M12.1822 4.75726L11.121 3.69751L5.8185 9.00001L11.121 14.3033L12.1822 13.2428L7.9395 9.00001L12.1822 4.75726Z"
+              fill="#1D1D1D"
+            />
+          </g>
+        </svg>
+      </a>
+    {% else %}
+      <span class="pagination__item pagination__item--disabled">
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="gg:chevron-left">
+            <path
+              id="Vector"
+              d="M12.1822 4.75726L11.121 3.69751L5.8185 9.00001L11.121 14.3033L12.1822 13.2428L7.9395 9.00001L12.1822 4.75726Z"
+              fill="#CCCCCC"
+            />
+          </g>
+        </svg>
+      </span>
+    {% endif %}
+  
+    {% for num in pagination.paginator.page_range %}
+      {% if pagination.number == num %}
+        <span class="pagination__item pagination__item--active">{{ num }}</span>
+      {% else %}
+        <a href="?page={{ num }}" class="pagination__item">{{ num }}</a>
+      {% endif %}
+    {% endfor %}
+  
+    {% if pagination.has_next %}
+      <a href="?page={{ pagination.next_page_number }}" class="pagination__item">
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="gg:chevron-left">
+            <path
+              id="Vector"
+              d="M5.81774 13.2427L6.87899 14.3025L12.1815 8.99999L6.87899 3.69674L5.81774 4.75724L10.0605 8.99999L5.81774 13.2427Z"
+              fill="#1D1D1D"
+            />
+          </g>
+        </svg>
+      </a>
+    {% else %}
+      <span class="pagination__item pagination__item--disabled">
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="gg:chevron-left">
+            <path
+              id="Vector"
+              d="M5.81774 13.2427L6.87899 14.3025L12.1815 8.99999L6.87899 3.69674L5.81774 4.75724L10.0605 8.99999L5.81774 13.2427Z"
+              fill="#CCCCCC"
+            />
+          </g>
+        </svg>
+      </span>
+    {% endif %}
+</div>
+{%endif%}

@@ -1,0 +1,51 @@
+{% extends "layout/base.html" %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/global.min.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  {% include 'partials/breadcrumbs.html' with breadcrumbs=breadcrumbs %}
+</div>
+
+<section class="container">
+
+  <div class="aboutus">
+
+    <div class="aboutus__img">
+      <img class="aboutus__img__item" src="/static/images/aboutus.jpg" alt="O nas - CourseBook">
+    </div>
+
+
+    <div class="aboutus__content">
+      <h2 class="aboutus__content__title">CourseBook: Znajdź Swój Idealny Kurs Gotowania</h2>
+      <p class="aboutus__content__txt">
+        Witajcie w CourseBook - Twoim źródle niezrównanego doświadczenia kulinarnej nauki! Łączymy entuzjastów gotowania z pasjonującymi kursami kulinarnej sztuki z całej Polski.
+      </p>
+      <p class="aboutus__content__txt">
+        Nasza aplikacja powstała z myślą o rozwiązaniu nieustannego chaosu, który towarzyszy poszukiwaniom wymarzonego kursu gotowania. Czy kiedykolwiek czułeś frustrację próbując odnaleźć idealny kurs kulinarny? To właśnie dla Ciebie stworzyliśmy CourseBook. Zapomnij o niepotrzebnym marnowaniu czasu na przeszukiwanie internetu w poszukiwaniu idealnego kursu. Zbieramy wszystkie kursy w jednym miejscu, byś mógł cieszyć się łatwością i wygodą w ich wyszukiwaniu.
+      </p>
+      <p class="aboutus__content__txt">
+        Nasza aplikacja to skarbnica możliwości kulinarnej edukacji. Niezależnie od tego, czy poszukujesz kursu klasycznej kuchni francuskiej, fascynuje Cię sztuka sushi, czy też pragniesz zgłębić tajniki pieczenia chleba z najlepszymi mistrzami – mamy to wszystko. Nasz cel to uczynienie Twojego poszukiwania i doświadczenia z nauką gotowania jak najbardziej satysfakcjonującym i prostym.
+      </p>
+      <p class="aboutus__content__txt">
+        CourseBook to uproszczony proces wyszukiwania kursów, abyś mógł spełniać swoje kulinarne marzenia.
+      </p>
+      <p class="aboutus__content__txt">
+        Dołącz do naszej społeczności entuzjastów gotowania, odkrywaj niesamowite kursy i rozwijaj swoje umiejętności kulinarnego mistrzostwa!
+      </p>
+    </div>
+  </div>
+
+  <div class="aboutus-btn">
+    <a title="Sprawdź najnowsze kursy" href="/newest" class="btn btn--primary">Najnowsze kursy
+      <span class="btn__arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="white">
+          </path>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+</section>
+
+<script src="{% static 'js/main.min.js' %}"></script>
+{% endblock %}

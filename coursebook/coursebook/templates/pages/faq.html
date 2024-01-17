@@ -1,0 +1,138 @@
+{% extends "layout/base.html" %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/global.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/faq.min.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  {% include 'partials/breadcrumbs.html' with breadcrumbs=breadcrumbs %}
+</div>
+
+<section class="container">
+
+  <h2 class="faq-h2">FAQ - najczęściej zadawane pytania</h2>
+
+  <div class="faq"> 
+     <div class="faq__img">
+        <img class="faq__img__item"src="/static/images/faq.png" alt="FAQ - CourseBook">
+     </div>
+
+     <div class="faq__content">
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy szkolenia są organizowane wyłącznie stacjonarnie?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3> 
+           <p class="faq__content__box__answer">Tak, wszystkie nasze szkolenia odbywają się w formie stacjonarnej w wybranych lokalizacjach.
+           </p>
+        </div> 
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Jak mogę zarejestrować się na szkolenie stacjonarne? 
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Rejestracja na szkolenia stacjonarne odbywa się poprzez naszą platformę online. Po zalogowaniu się, wybierz interesujące szkolenie, a następnie postępuj zgodnie z instrukcjami dotyczącymi rejestracji na konkretne wydarzenie stacjonarne.
+           </p>
+        </div>
+
+        
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy kursy stacjonarne są dostępne w różnych lokalizacjach?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Tak, oferujemy szkolenia stacjonarne w różnych lokalizacjach. Możesz sprawdzić dostępność kursów w wybranym regionie podczas rejestracji.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy jest limit miejsc na szkoleniach stacjonarnych? 
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Tak, liczba miejsc na szkoleniach stacjonarnych może być ograniczona. Zachęcamy do wcześniejszej rejestracji, aby zagwarantować sobie miejsce.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy terminy szkoleń stacjonarnych są elastyczne?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Terminy szkoleń stacjonarnych są ustalane z wyprzedzeniem i ogłaszane w harmonogramie. Możesz wybierać spośród dostępnych terminów i dopasować je do swojego planu.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy można przekształcić szkolenie stacjonarne na online lub odwrotnie?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">W obecnej chwili wszystkie nasze szkolenia odbywają się stacjonarnie. Nie ma opcji uczestnictwa online.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy opłata za szkolenie obejmuje zakwaterowanie i wyżywienie na szkoleniu stacjonarnym?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">W zależności od kursu, opłata może obejmować różne elementy, takie jak zakwaterowanie i wyżywienie. Szczegóły są podane w opisie konkretnego szkolenia.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy dostępne są szkolenia stacjonarne dla różnych poziomów umiejętności? 
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Tak, oferujemy szkolenia stacjonarne dostosowane do różnych poziomów umiejętności, zarówno dla początkujących, jak i dla zaawansowanych uczestników.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy szkoleniowcy prowadzący zajęcia stacjonarne są doświadczeni?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Tak, wszyscy nasi szkoleniowcy są doświadczonymi specjalistami w dziedzinie gotowania.
+           </p>
+        </div>
+
+
+
+
+        <div class="faq__content__box">
+           <h3 class="faq__content__box__question">Czy istnieje możliwość przeniesienia rezerwacji z kursu stacjonarnego na inny termin lub inny kurs w razie niemożności uczestnictwa?
+              <svg class="faq__content__box__question__svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+           </h3>
+           <p class="faq__content__box__answer">Tak, w niektórych przypadkach istnieje taka możliwość. Prosimy o wcześniejszy kontakt z obsługą klienta w przypadku takiej potrzeby.
+           </p>
+        </div>
+
+
+
+
+
+     </div>
+  </div>
+</section>
+
+<script src="{% static 'js/main.min.js' %}"></script>
+<script src="{% static 'js/faq.min.js' %}"></script>
+{% endblock %}

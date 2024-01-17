@@ -1,0 +1,33 @@
+{% extends "layout/base-nb.html" %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/global.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/course.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/splide-core.min.css' %}" />
+<link rel="stylesheet" href="{% static 'css/blog.min.css' %}" />
+{% endblock %} {% block content %}
+<div class="container breadcrumbs-post">
+  {% include 'partials/breadcrumbs.html' with breadcrumbs=breadcrumbs %}
+</div>
+
+
+
+
+<section class="container">
+  {% if post.photo %}
+  <div class="blog-img">
+    <div class="blog-content__item__labels tags">
+      {%for postCategory in post.categories.all%}
+      <p class="blog-content__item__labels__item">{{ postCategory.name }}</p>
+      {%endfor%}
+    </div>
+    <img width="1440" src="{{post.photo.url}}" alt="{{post.title}}">
+  </div>
+  {% endif %}
+  <div class="article">
+    <h1 class="article__title">{{post.title}}</h1> 
+    <p class="article__shortcontent">{{post.short_content}}</p>
+    <div class="article__txt">{{post.content |safe}}</div>
+  </div>
+</section>
+<script src="{% static 'js/main.min.js' %}"></script>
+<script src="{% static 'js/splide.min.js' %}"></script>
+{% endblock %}

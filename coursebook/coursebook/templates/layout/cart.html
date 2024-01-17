@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        @font-face {
+            font-family: "Montserrat";
+            font-display: swap;
+            src: url("{%static 'fonts/Montserrat-Regular.ttf' %}") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Montserrat";
+            font-display: swap;
+            src: url("{%static 'fonts/Montserrat-Medium.ttf' %}") format("truetype");
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Montserrat";
+            font-display: swap;
+            src: url("{%static 'fonts/Montserrat-SemiBold.ttf' %}") format("truetype");
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Montserrat";
+            font-display: swap;
+            src: url("{%static 'fonts/Montserrat-Bold.ttf' %}") format("truetype");
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+    {% block styles %}
+    {% endblock %}
+</head>
+
+<body {% if request.path != "/" %} class="special"{% endif %}>
+    {% include 'partials/alert.html' with messages=messages %}
+    
+
+    {% include 'partials/header-cart.html' %}
+    {% include 'partials/cart.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% block scripts %}
+    {% endblock %}
+    <div class="overlay"></div>
+</body>
+{% include 'partials/footer.html' %}
+</html>

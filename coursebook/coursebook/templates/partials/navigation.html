@@ -1,0 +1,377 @@
+<div class="bar">
+	<div class="container">
+		<div class="bar__inner">
+			<div class="bar__box">
+				<div class="bar__box-office">
+					<p>Biuro obsługi klienta:</p>
+					<a href="tel:+123456789">+48 536 918 642</a>
+				</div>
+				<div class="bar__separator"></div>
+				<ul class="bar__box-menu">
+					<li class="bar__menu-item">
+						<a class="bar__menu-link" href="{% url 'about_us' %}">O nas</a>
+					</li>
+					<li class="bar__menu-item">
+						<a class="bar__menu-link" href="{% url 'faq'%}">Pytania</a>
+					</li>
+					<li class="bar__menu-item">
+						<a class="bar__menu-link" href="{% url 'contact'%}">Kontakt</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<nav class="nav">
+	<div class="container">
+		<div class="nav__inner">
+			<div class="nav__left">
+				<a href="{% url 'home' %}" class="nav__left-logo"> CourseBook </a>
+				<div class="nav__left-drop">
+					<p class="nav__menu-link">Szkolenia</p>
+					<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M10.4975 12.155L17 18.6575L23.5025 12.155L25.5 14.1667L17 22.6667L8.5 14.1667L10.4975 12.155Z"
+							fill="#FF7700" />
+					</svg>
+					<div class="nav__submenu">
+						<div class="nav__submenu-list">
+							<a href="{% url 'course_category' province_slug='dolnoslaskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Dolnośląskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa dolnośląskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='kujawsko-pomorskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Kujawsko-Pomorskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa kujawsko-pomorskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='lubelskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Lubelskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa lubelskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='lubuskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Lubuskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa lubuskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='lodzkie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Łódzkie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa łódzkiego, które stanowią prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='malopolskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Małopolskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa małopolskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='mazowieckie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Mazowieckie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa mazowieckiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='opolskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Opolskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa opolskiego, które stanowią prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='podkarpackie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Podkarpackie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa podkarpackiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='podlaskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Podlaskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa podlaskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='pomorskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Pomorskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa pomorskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='slaskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Śląskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa śląskiego, które stanowią prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='swietokrzyskiego' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Świętokrzyskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa świętokrzyskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='warminsko-mazurskie' %}"
+								class="nav__submenu-item">
+								<div class="nav__submenu-name">Warmińsko-mazurskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa warmińsko-mazurskiego, które
+									stanowią prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='wielkopolskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Wielkopolskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa wielkopolskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+							<a href="{% url 'course_category' province_slug='zachpdniopomorskie' %}" class="nav__submenu-item">
+								<div class="nav__submenu-name">Zachodniopomorskie</div>
+								<div class="nav__submenu-desc">
+									Zapraszamy do odkrycia fascynujących szkoleń województwa zachodniopomorskiego, które stanowią
+									prawdziwe
+									kulinarne doświadczenie
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<ul class="nav__left-menu">
+					<li class="nav__menu-item">
+						<a href="{%url 'newest'%}" class="nav__menu-link"> Nowości </a>
+					</li>
+					<li class="nav__menu-item">
+						<a href="{%url 'blog'%}" class="nav__menu-link"> Blog </a>
+					</li>
+					<li class="nav__menu-item">
+						<a href="{%url 'gallery'%}" class="nav__menu-link"> Galeria </a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__right">
+				<div class="nav__account">
+					{% if user.is_authenticated %}
+					<a href="{% url 'account' %}">
+						<svg class="nav__right-user" width="34" height="34" viewBox="0 0 34 34" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17 5.66663C18.5029 5.66663 19.9442 6.26365 21.0069 7.32635C22.0696 8.38906 22.6666 9.8304 22.6666 11.3333C22.6666 12.8362 22.0696 14.2775 21.0069 15.3402C19.9442 16.4029 18.5029 17 17 17C15.4971 17 14.0557 16.4029 12.993 15.3402C11.9303 14.2775 11.3333 12.8362 11.3333 11.3333C11.3333 9.8304 11.9303 8.38906 12.993 7.32635C14.0557 6.26365 15.4971 5.66663 17 5.66663ZM17 19.8333C23.2616 19.8333 28.3333 22.3691 28.3333 25.5V28.3333H5.66663V25.5C5.66663 22.3691 10.7383 19.8333 17 19.8333Z"
+								fill="#12263A" />
+						</svg>
+					</a>
+					{% else %}
+					<a href="{% url 'login' %}">
+						<svg class="nav__right-user" width="34" height="34" viewBox="0 0 34 34" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17 5.66663C18.5029 5.66663 19.9442 6.26365 21.0069 7.32635C22.0696 8.38906 22.6666 9.8304 22.6666 11.3333C22.6666 12.8362 22.0696 14.2775 21.0069 15.3402C19.9442 16.4029 18.5029 17 17 17C15.4971 17 14.0557 16.4029 12.993 15.3402C11.9303 14.2775 11.3333 12.8362 11.3333 11.3333C11.3333 9.8304 11.9303 8.38906 12.993 7.32635C14.0557 6.26365 15.4971 5.66663 17 5.66663ZM17 19.8333C23.2616 19.8333 28.3333 22.3691 28.3333 25.5V28.3333H5.66663V25.5C5.66663 22.3691 10.7383 19.8333 17 19.8333Z"
+								fill="#12263A" />
+						</svg>
+					</a>
+					{% endif %}
+					<svg class="nav__right-basket" width="34" height="34" viewBox="0 0 34 34" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M10.0625 4.25C9.78071 4.25 9.51046 4.36194 9.3112 4.5612C9.11194 4.76046 9 5.03071 9 5.3125C9 5.59429 9.11194 5.86454 9.3112 6.0638C9.51046 6.26306 9.78071 6.375 10.0625 6.375H10.5853C10.816 6.3754 11.0403 6.45088 11.2243 6.59005C11.4083 6.72921 11.542 6.92449 11.6053 7.14637L14.9755 18.9401C15.1661 19.6057 15.5682 20.1911 16.1211 20.6078C16.6739 21.0246 17.3474 21.25 18.0398 21.25H27.7489C28.386 21.2501 29.0086 21.0592 29.5363 20.7021C30.0639 20.3449 30.4724 19.8377 30.709 19.2461L33.8412 11.4134C33.97 11.0911 34.0179 10.7421 33.9806 10.3971C33.9434 10.052 33.8222 9.72127 33.6277 9.43385C33.4331 9.14643 33.1711 8.91103 32.8646 8.74824C32.5581 8.58545 32.2163 8.50022 31.8692 8.5H14.202L13.6474 6.562C13.4572 5.89639 13.0556 5.31077 12.5031 4.89366C11.9507 4.47654 11.2775 4.2506 10.5853 4.25H10.0625ZM18.5625 29.75C18.9811 29.75 19.3956 29.6676 19.7823 29.5074C20.169 29.3472 20.5204 29.1124 20.8164 28.8164C21.1124 28.5204 21.3472 28.169 21.5074 27.7823C21.6676 27.3956 21.75 26.9811 21.75 26.5625C21.75 26.1439 21.6676 25.7294 21.5074 25.3427C21.3472 24.956 21.1124 24.6046 20.8164 24.3086C20.5204 24.0126 20.169 23.7778 19.7823 23.6176C19.3956 23.4574 18.9811 23.375 18.5625 23.375C17.7171 23.375 16.9064 23.7108 16.3086 24.3086C15.7108 24.9064 15.375 25.7171 15.375 26.5625C15.375 27.4079 15.7108 28.2186 16.3086 28.8164C16.9064 29.4142 17.7171 29.75 18.5625 29.75ZM27.0625 29.75C27.4811 29.75 27.8956 29.6676 28.2823 29.5074C28.669 29.3472 29.0204 29.1124 29.3164 28.8164C29.6124 28.5204 29.8472 28.169 30.0074 27.7823C30.1676 27.3956 30.25 26.9811 30.25 26.5625C30.25 26.1439 30.1676 25.7294 30.0074 25.3427C29.8472 24.956 29.6124 24.6046 29.3164 24.3086C29.0204 24.0126 28.669 23.7778 28.2823 23.6176C27.8956 23.4574 27.4811 23.375 27.0625 23.375C26.2171 23.375 25.4064 23.7108 24.8086 24.3086C24.2108 24.9064 23.875 25.7171 23.875 26.5625C23.875 27.4079 24.2108 28.2186 24.8086 28.8164C25.4064 29.4142 26.2171 29.75 27.0625 29.75Z"
+							fill="#12263A" />
+					</svg>
+
+					<div class="nav__right-cart-icon">
+						<p class="nav__right-cart-icon-number"></p>
+					</div>
+
+					<div class="nav__left-burgerBox">
+						<svg class="nav__account-burger jsBurger" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="feather feather-menu">
+							<line x1="3" y1="12" x2="21" y2="12"></line>
+							<line x1="3" y1="6" x2="21" y2="6"></line>
+							<line x1="3" y1="18" x2="21" y2="18"></line>
+						</svg>
+
+						<svg class="nav__account-btnclose jsCloseBurger" xmlns="http://www.w3.org/2000/svg" width="42"
+							height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+							<line x1="18" y1="6" x2="6" y2="18"></line>
+							<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="mobile-menu">
+
+		<div class="mobile-menu__first ">
+			<div class="mobile-menu__first-box1">
+				<div class="mobile-menu__first-item jsTrainingsBTN">
+					<div class="mobile-menu__first-txt">
+						<p>Szkolenia</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+							stroke="#12263a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="feather feather-chevron-right">
+							<polyline points="9 18 15 12 9 6"></polyline>
+						</svg>
+					</div>
+				</div>
+				<a href="{% url 'newest' %}" class="mobile-menu__first-item">
+					<div class="mobile-menu__first-txt">
+						Nowości
+					</div>
+				</a>
+				<a href="{% url 'blog' %}" class="mobile-menu__first-item">
+					<div class="mobile-menu__first-txt">
+						Blog
+					</div>
+				</a>
+				<a href="{% url 'gallery' %}" class="mobile-menu__first-item">
+					<div class="mobile-menu__first-txt">
+						Galeria
+					</div>
+				</a>
+				<a href="{% url 'about_us' %}" class="mobile-menu__first-item">
+					<div class="mobile-menu__first-txt">
+						O nas
+					</div>
+				</a>
+				<a href="{% url 'faq' %}" class="mobile-menu__first-item">
+					<div class="mobile-menu__first-txt">
+						Pytania
+					</div>
+				</a>
+				<a href="{% url 'contact' %}" class="mobile-menu__first-item">
+					<div class="mobile-menu__first-txt">
+						Kontakt
+					</div>
+				</a>
+			</div>
+			<div class="mobile-menu__first-box2">
+
+
+			</div>
+		</div>
+
+		<div class="mobile-menu__second jsShowTrainingsSubmenu">
+			<div class="mobile-menu__second-backBTN">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line></svg>
+            <p>POWRÓT</p>
+        </div>
+			<a href="{% url 'course_category' province_slug='dolnoslaskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Dolnośąskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='kujawsko-pomorskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Kojawsko-Pomorskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='lubelskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Lubelskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='lubuskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Lubuskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='lodzkie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Łódzkie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='malopolskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Małopolskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='mazowieckie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Mazowieckie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='opolskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Opolskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='podkarpackie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Podkarpackie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='podlaskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Podlaskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='pomorskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Pomorskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='slaskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Śląskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='swietokrzyskiego' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Świętokrzyskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='warminsko-mazurskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Warmińsko-mazurskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='wielkopolskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Wielkopolskie
+				</div>
+			</a>
+			<a href="{% url 'course_category' province_slug='zachpdniopomorskie' %}" class="mobile-menu__second-item">
+				<div class="mobile-menu__second-menu">
+					Zachodniopomorskie
+				</div>
+			</a>
+		</div>
+
+
+
+	</div>
+</nav>

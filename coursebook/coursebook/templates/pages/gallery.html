@@ -1,0 +1,43 @@
+{% extends "layout/base.html" %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/global.min.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  {% include 'partials/breadcrumbs.html' with breadcrumbs=breadcrumbs %}
+</div>
+
+<section class="container">
+
+
+  <div class="gallery">
+    <h2 class="gallery__title">Galeria - wirtualna wycieczka po naszych kursach</h2>
+
+
+    <div class="gallery__container">
+      <div class="gallery__box">
+
+        <img class="gallery__img" src="static/images/gallery/1.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/2.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/3.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/4.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/5.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/6.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/8.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/9.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/10.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/11.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/12.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/13.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/20.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/15.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/16.jpg" alt="Galeria obrazów - CourseBook">
+        <img class="gallery__img" src="static/images/gallery/18.jpg" alt="Galeria obrazów - CourseBook">
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="{% static 'js/main.min.js' %}"></script>
+{% endblock %}
